@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'iranyekanwebregular.woff';
+    src: url('../fonts/iranyekanwebregular.woff') format('woff');
+}
+@font-face { 
+    font-family: 'iranyekanwebmedium.woff';
+    src: url('../fonts/iranyekanwebmedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'YekanBakhBold.woff';
+    src: url('../fonts/YekanBakhBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'YekanBakhHeavy.woff';
+    src: url('../fonts/YekanBakhHeavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'YekanBakhMedium.woff';
+    src: url('../fonts/YekanBakhMedium.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-form {
+    margin-top: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    padding: 30px;
+    width: 400px;
+    height: 480px;
+    border: 1px solid #e0e0e0;
+    border-radius: 9px;
+}
+
+.logo-login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-login-form img {
+    margin-top: 5px;
+    width: 113px;
+}
+
+.head-text h2 {
+    font-size: 1.68rem;
+    font-family: 'YekanBakhMedium.woff';
+}
+
+.head-text p {
+    padding-top: 38px;
+    padding-right: 3px;
+    font-family: 'iranyekanwebregular.woff';
+    font-size: 0.82rem;
+    color: #3e3e3e;
+}
+
+.box-input input {
+    margin-top: 30px;
+    width: 100%;
+    height: 52px;
+    border: none;
+    background-color: #ededed;
+    border-radius: 8px;
+    outline-color: royalblue;
+}
+
+.box-input input:hover {
+    transition: all 150ms ease-in;
+    outline-color: royalblue;
+}
+
+.box-input input::placeholder {
+    font-family: 'iranyekanwebregular.woff';
+    text-align: left;
+    padding-left: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 3px;
+}
+
+.checkbox-label label {
+    margin-right: 8px;
+    font-size: 0.73rem;
+    font-family: 'iranyekanwebregular.woff';
+}
+
+.btn-login button {
+    border: none;
+    border-radius: 9px;
+    background-image: linear-gradient(160deg,#37678a 0%,#0A3D62 100%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'YekanBakhMedium.woff';
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.text-link-buttom {
+    margin-top: 26px;
+}
+
+.text-link-buttom a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 0.77rem;
+    font-family: 'YekanBakhHeavy.woff';
+}
