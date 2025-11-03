@@ -1,258 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoYadak24</title>
-    <link rel="shortcut icon" href="img/lgo_atoyadak.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-</head>
-
-<body>
-
-    <div class="main">
-
-        <header>
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/lgo_atoyadak.png" alt="">
-                </div>
-                <nav>
-                    <ul class="navbar-ul">
-                        <li class="image-li">
-                            <img src="img/shopping-cart.svg" alt="">
-                            <a href="#">فروشگاه</a>
-                        </li>
-                        <li class="image-li">
-                            <img src="img/parts.png" alt="">
-                            <a href="#">جدیدترین قطعات</a>
-                        </li>
-                        <li class="image-li">
-                            <img src="img/wallet.png" alt="">
-                            <a href="#"> مقالات </a>
-                        </li>
-                        <li class="image-li">
-                            <img src="img/about us.png" alt="">
-                            <a href="#about">درباره ما</a>
-                        </li>
-                        <li class="image-li">
-                            <img src="img/call.png" alt="">
-                            <a href="#contact">تماس با ما</a>
-                        </li>
-                        <li class="image-li">
-                            <img src="img/login.png" alt="">
-                            <a href="html/login-form.html">ورود / ثبت نام</a>
-                        </li>
-                        <!-- آیکون سبد خرید (در گوشه صفحه) -->
-                        <div class="cart-icon">
-                            🛒 <span id="cart-count">0</span>
-                        </div>
-
-                        <!-- پاپ‌آپ سبد خرید -->
-                        <div class="cart-popup" id="cart-popup">
-                            <h3>سبد خرید شما</h3>
-                            <ul id="cart-items"></ul>
-                            <button id="close-cart">بستن</button>
-                            <a href="html/cart.html">
-                                <button id="close-cart">خرید نهایی و پرداخت</button>
-                            </a>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="title-work-site">
-                <span class="icon-title">
-                    <img src="img/car.png" alt="">
-                    <h1>هوشمند انتخاب کن، مطمئن رانندگی کن.</h1>
-                </span>
-                <div class="input-box">
-                    <div class="search-bar">
-                        <input type="text" placeholder="نام قطعه، مدل خودرو یا برند را وارد کنید..." id="searchInput">
-                        <button id="searchButton">🔍</button>
-                    </div>
-                </div>
-                <div class="filters">
-                    <select id="brand">
-                        <option>انتخاب برند</option>
-                        <option>BMW</option>
-                        <option>Mercedes-Benz</option>
-                        <option>Audi</option>
-                    </select>
-
-                    <select id="category">
-                        <option>دسته‌بندی قطعه</option>
-                        <option>لنت ترمز</option>
-                        <option>فیلتر هوا</option>
-                        <option>تسمه موتور</option>
-                    </select>
-                </div>
-                <div id="searchResults" class="results-list">
-                    <!-- نتایج جست‌وجو به صورت داینامیک اینجا اضافه می‌شن -->
-                </div>
-                <span class="btn">
-                    <a href="#">مشاهده فروشگاه</a>
-                </span>
-            </div>
-            <!-- آیکون باز کردن چت -->
-            <div id="chat-icon">💬</div>
-
-            <!-- پنجره چت -->
-            <div id="chat-box">
-                <div id="chat-header">🤖 چت‌بات AutoYadak24</div>
-                <div id="chat-messages"></div>
-                <div id="chat-input-area">
-                    <input type="text" id="chat-input" placeholder="بنویس چه قطعه‌ای می‌خوای...">
-                    <button id="send-btn">ارسال</button>
-                </div>
-            </div>
-
-            <script src="js/chatbot.js"></script>
-        </header>
-
-
-        <section class="box-content">
-            <div class="box">
-                <div class="box-image">
-                    <img src="img/brain-icon-3.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h5>مشاوره هوشمند</h5>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-image">
-                    <img src="img/letter.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h5>اصالت کالا</h5>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-image">
-                    <img src="img/send box.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h5>ارسال سریع</h5>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-image">
-                    <img src="img/message-54.png" alt="">
-                </div>
-                <div class="text-box">
-                    <h5>پشتیبانی دائمی</h5>
-                </div>
-            </div>
-        </section>
-
-
-
-        <div class="box-buy">
-            <div class="box-content-buy">
-                <div class="image-box">
-                    <img src="img/breakpad.png" alt="">
-                </div>
-                <div class="text-box-content">
-                    <h4>لنت ترمز BMW X5</h4>
-                    <p>قطعه اصلی ساخت آلمان</p>
-                    <span class="price">۴,۲۰۰,۰۰۰ تومان</span>
-                </div>
-                <Span class="btn-buy">
-                    <a href="#">مشاهده</a>
-                </Span>
-            </div>
-
-            <div class="box-content-buy">
-                <div class="image-box">
-                    <img src="img/oil-filter.png" alt="">
-                </div>
-                <div class="text-box-content">
-                    <h4>فیلتر روغن Mercedes E-Class</h4>
-                    <p>کیفیت اورجینال</p>
-                    <span class="price">۱,۸۰۰,۰۰۰ تومان</span>
-                </div>
-                <Span class="btn-buy">
-                    <a href="#">مشاهده</a>
-                </Span>
-            </div>
-
-            <div class="box-content-buy">
-                <div class="image-box">
-                    <img src="img/headlight.png" alt="">
-                </div>
-                <div class="text-box-content">
-                    <h4> چراغ اصلی Mercedes E-Class</h4>
-                    <p>کیفیت اورجینال</p>
-                    <span class="price">۱,۸۰۰,۰۰۰ تومان</span>
-                </div>
-                <Span class="btn-buy">
-                    <a href="#">مشاهده</a>
-                </Span>
-            </div>
-
-            <div class="box-content-buy">
-                <div class="image-box">
-                    <img src="img/bumper.png" alt="">
-                </div>
-                <div class="text-box-content">
-                    <h4> سپر اصلی Audi A6</h4>
-                    <p>کیفیت اورجینال</p>
-                    <span class="price">2,300,000 تومان</span>
-                </div>
-                <Span class="btn-buy">
-                    <a href="#">مشاهده</a>
-                </Span>
-            </div>
-        </div>
-
-        <section class="products">
-            <h2 class="section-title">قطعات پر فروش</h2>
-
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="img/absorber.png" alt="فیلتر BMW">
-                    <h3>فیلتر هوا BMW</h3>
-                    <p class="price">2,500,000 تومان</p>
-                    <button class="add-to-cart">افزودن به سبد خرید</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/oil-filter.png" alt="لنت Benz">
-                    <h3> فیلتر روغن Benz</h3>
-                    <p class="price">3,200,000 تومان</p>
-                    <button class="add-to-cart">افزودن به سبد خرید</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/breakpad.png" alt="تسمه Audi">
-                    <h3>لنت اصلی Audi</h3>
-                    <p class="price">1,800,000 تومان</p>
-                    <button class="add-to-cart">افزودن به سبد خرید</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-preview">
-            <h2>درباره ما</h2>
-            <p>AutoYadak24 با هدف عرضه قطعات اصلی BMW، Benz و Audi تأسیس شد...</p>
-            <a href="html/about.html" class="btn-contact">ادامه مطلب</a>
-        </section>
-
-        <section class="contact-preview">
-            <h2>تماس با ما</h2>
-            <p>سؤالی دارید یا به مشاوره نیاز دارید؟ کارشناسان ما پاسخگو هستند.</p>
-            <a href="html/contact.html" class="btn-contact">تماس با ما</a>
-        </section>
-
-        <script src="js/script.js"></script>
-
-    </div>
-
-</body>
-
-</html>
