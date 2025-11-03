@@ -1,0 +1,724 @@
+@font-face {
+    font-family: 'iranyekanwebregular.woff';
+    src: url('../fonts/iranyekanwebregular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iranyekanwebmedium.woff';
+    src: url('../fonts/iranyekanwebmedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'YekanBakhBold.woff';
+    src: url('../fonts/YekanBakhBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'YekanBakhHeavy.woff';
+    src: url('../fonts/YekanBakhHeavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'YekanBakhMedium.woff';
+    src: url('../fonts/YekanBakhMedium.woff') format('woff');
+}
+
+body {
+    font-family: 'iranyekanwebmedium.woff';
+    background-image: url(../img/Mercedes-Benz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    transition: background-image 1s ease-in-out;
+    /* افکت محو نرم */
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 107%;
+    background: rgba(0, 0, 0, 0.35);
+    /* هاله نوری تیره */
+    z-index: -1;
+}
+
+.main {
+    min-height: 400vh;
+}
+
+.logo img {
+    margin-left: 70px;
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.navbar-ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-ul li {
+    list-style-type: none;
+    margin-left: 45px;
+}
+
+.navbar-ul li a {
+    font-family: 'YekanBakhMedium.woff';
+    text-decoration: none;
+    color: #F5F7FA;
+    font-size: 0.90rem;
+}
+
+.image-li {
+    display: flex;
+    align-items: center;
+}
+
+.image-li img {
+    width: 19px;
+    margin-left: 7px;
+    margin-top: -5px;
+}
+
+.bag-buy {
+    display: flex;
+    align-items: center;
+}
+
+.title-work-site {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-work-site h1 {
+    word-spacing: 3.5;
+    color: #F5F7FA;
+    text-shadow: 4px 3px 2px rgb(5, 5, 5);
+    font-size: 2.90rem;
+    font-family: 'YekanBakhHeavy.woff';
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+}
+
+.icon-title img {
+    width: 40px;
+    margin-left: 17px;
+}
+
+#searchInput::placeholder {
+    font-family: 'YekanBakhMedium.woff';
+    color: #fff;
+}
+
+#category {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    height: 33px;
+    font-family: 'YekanBakhMedium.woff';
+    border-radius: 5px;
+}
+
+#brand {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    height: 33px;
+    font-family: 'YekanBakhMedium.woff';
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 35px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #F5F7FA;
+    background: linear-gradient(90deg, #1e88e5, #00bcd4);
+    border-radius: 7px;
+    font-family: 'YekanBakhMedium.woff';
+    padding: 9px 13px 6px 13px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-content {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 40px 250px;
+    cursor: pointer;
+}
+
+.box {
+    height: 160px;
+    background-color: #F5F7FA;
+    border-radius: 18px;
+    box-shadow: 0 0 12px 0 #7b869621;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1)
+}
+
+.box-image img {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+}
+
+.text-box h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.80rem;
+    font-family: 'YekanBakhMedium.woff';
+    color: #383838;
+}
+
+.box:hover {
+    background-color: #fff;
+    box-shadow: 0 6px 10px 0 rgb(178 189 206 / .2);
+    border: 1px solid #eef2f9;
+    transition: box-shadow .5s cubic-bezier(.4, 0, 1, 1), transform .2s cubic-bezier(.4, 0, 1, 1);
+}
+
+.box-buy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 70px 30px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    border-radius: 17px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.box-content-buy {
+    background-image: linear-gradient(to top, #a2c3cc 0%, #6f86d6 100%);
+    height: 380px;
+    border-radius: 17px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    border-radius: 17px;
+    background-color: #F5F7FA;
+    object-fit: contain;
+    width: 98%;
+    margin-top: 3px;
+    margin-right: 3px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.text-box-content h4 {
+    font-family: 'YekanBakhBold.woff';
+    margin-right: 6px;
+    color: #fff;
+}
+
+.text-box-content p {
+    margin-right: 6px;
+    text-align: center;
+    color: #e9defa;
+}
+
+.btn-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-buy a {
+    font-family: 'YekanBakhHeavy.woff';
+    text-decoration: none;
+    color: #0A3D62;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.btn-buy a {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.btn-buy a:hover {
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
+
+.products {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #d7d2cc, #304352);
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 17px;
+}
+
+.section-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'YekanBakhBold.woff';
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 0 40px;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    transition: all 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(30, 136, 229, 0.6);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #fff;
+    margin: 15px 0 5px;
+    font-size: 18px;
+    font-family: 'YekanBakhBold.woff';
+}
+
+.price {
+    color: #1c1c1c;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background: linear-gradient(90deg, #1e88e5, #00bcd4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'YekanBakhHeavy.woff';
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(90deg, #1565c0, #0097a7);
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+}
+
+.results-list {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 500px;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 14px 15px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.427);
+    color: #fff;
+}
+
+.search-bar button {
+    background: #dcdcdc;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.results-list {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 500px;
+    color: #fff;
+}
+
+/* آیکون چت */
+#chat-icon {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: #1c1c1c;
+    color: #f0f0f0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#chat-icon:hover {
+    background: #3a3a3a;
+}
+
+/* پنجره چت */
+#chat-box {
+    font-family: 'YekanBakhBold.woff';
+    position: fixed;
+    bottom: 90px;
+    left: 25px;
+    width: 320px;
+    height: 400px;
+    background: rgba(24, 24, 24, 0.95);
+    border: 1px solid #555;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+#chat-header {
+    background: linear-gradient(90deg, #1565c0, #111);
+    padding: 10px;
+    color: #e0e0e0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 14px;
+}
+
+#chat-input-area ::placeholder {
+    font-family: 'YekanBakhMedium.woff';
+}
+
+.message {
+    margin: 6px 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.user {
+    background: #3a3a3a;
+    align-self: flex-end;
+}
+
+.bot {
+    background: #1e88e5;
+    color: #fff;
+    align-self: flex-end;
+}
+
+#chat-input-area {
+    display: flex;
+    border-top: 1px solid #444;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #222;
+    color: #fff;
+}
+
+#send-btn {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'YekanBakhBold.woff';
+}
+
+#send-btn:hover {
+    background: #1565c0;
+}
+
+/* آیکون سبد خرید */
+.cart-icon {
+    cursor: pointer;
+    font-size: 22px;
+    position: fixed;
+    top: 25px;
+    left: 35px;
+    z-index: 1000;
+    color: #fff;
+}
+
+#cart-count {
+    background: #00bcd4;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    color: #fff;
+}
+
+/* پاپ‌آپ سبد خرید */
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 40px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    z-index: 1001;
+    font-family: 'YekanBakhMedium.woff';
+}
+
+.cart-popup h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    margin: 8px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+#close-cart {
+    margin-top: 15px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    font-family: 'YekanBakhBold.woff';
+}
+
+#close-cart:hover {
+    background: #0288d1;
+}
+
+/* 🎯 بخش درباره ما و تماس با ما در صفحه اصلی */
+.about-preview,
+.contact-preview {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 900px;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(8px);
+    transition: all 0.4s ease;
+}
+
+.about-preview:hover,
+.contact-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(0, 188, 212, 0.5);
+}
+
+.about-preview h2,
+.contact-preview h2 {
+    font-size: 26px;
+    color: #80d8ff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: 'YekanBakhBold.woff';
+}
+
+.about-preview p,
+.contact-preview p {
+    font-size: 17px;
+    color: #636363;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'YekanBakhMedium.woff';
+}
+
+.btn-contact {
+    background: linear-gradient(90deg, #1e88e5, #00bcd4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'YekanBakhHeavy.woff';
+}
+
+.btn-contact:hover {
+    background: linear-gradient(90deg, #1565c0, #0097a7);
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+  /* هدر */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 80%;
+    margin-top: 15px;
+  }
+}
+
+/* حالت موبایل کوچک */
+@media screen and (max-width: 768px) {
+
+  /* منو همبرگری */
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -34px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  /* اسلایدر */
+  .title-work-site {
+    text-align: center;
+    padding: 50px 20px;
+    background-position: center;
+  }
+
+  .title-work-site h1 {
+    font-size: 22px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar select {
+    width: 100%;
+  }
+
+  /* باکس‌های دسته‌بندی خدمات */
+  .box-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  .title-work-site h1 {
+    font-size: 20px;
+  }
+
+  header img.logo {
+    width: 150px;
+  }
+}

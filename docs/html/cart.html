@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خرید نهایی</title>
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+
+<body>
+
+    <header class="cart-header">
+        <h1>سبد خرید شما</h1>
+        <p>قطعات انتخابی شما برای خرید</p>
+    </header>
+
+    <main class="cart-content">
+
+        <section class="cart-items">
+            <div class="cart-item">
+                <img src="../img/breakpad.png" alt="لنت ترمز BMW">
+                <div class="item-info">
+                    <h3>لنت ترمز BMW سری 5</h3>
+                    <p>کد محصول: B-5021</p>
+                    <p class="price">۴٬۵۰۰٬۰۰۰ تومان</p>
+                    <div class="quantity">
+                        <button class="minus">−</button>
+                        <input type="number" value="1" min="1">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <a href="#">
+                <button class="remove-item">❌ حذف</button>
+                </a>
+            </div>
+
+            <div class="cart-item">
+                <img src="../img/oil-filter.png" alt="فیلتر روغن Mercedes-Benz">
+                <div class="item-info">
+                    <h3>فیلتر روغن Mercedes-Benz</h3>
+                    <p>کد محصول: M-2009</p>
+                    <p class="price">۲٬۸۰۰٬۰۰۰ تومان</p>
+                    <div class="quantity">
+                        <button class="minus">−</button>
+                        <input type="number" value="1" min="1">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">❌ حذف</button>
+            </div>
+             <script src="../js/bag-buy.js"></script>
+        </section>
+
+        <aside class="cart-summary">
+            <h2>خلاصه سبد خرید</h2>
+            <p>تعداد اقلام: <strong>2</strong></p>
+            <p>جمع کل: <strong>۷٬۳۰۰٬۰۰۰ تومان</strong></p>
+            <a href="checkout.html" class="checkout-link">🛍️ خرید نهایی و پرداخت</a>
+        </aside>
+
+    </main>
+
+    <footer class="cart-footer">
+        <p>© 2025 AutoYadak24 | تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    
+
+
+</body>
+
+</html>
