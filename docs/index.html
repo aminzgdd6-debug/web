@@ -8,9 +8,12 @@
     <link rel="shortcut icon" href="img/lgo_atoyadak.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    
+    <!-- پیش‌لود عکس بکگراند -->
+    <link rel="preload" href="img/Mercedes-Benz.png" as="image">
 </head>
 
-<body>
+<body style="background-color: #1a1a1a;">
 
     <div class="main">
 
@@ -250,6 +253,66 @@
         </section>
 
         <script src="js/script.js"></script>
+
+        <!-- اسکریپت لود بکگراند -->
+        <script>
+            // پیش‌لود عکس بکگراند
+            document.addEventListener('DOMContentLoaded', function() {
+                const bgImage = new Image();
+                bgImage.src = 'img/Mercedes-Benz.png';
+                
+                bgImage.onload = function() {
+                    // وقتی عکس لود شد، بکگراند را اعمال کن
+                    document.body.style.backgroundImage = `url('${bgImage.src}')`;
+                    document.body.style.backgroundRepeat = 'no-repeat';
+                    document.body.style.backgroundPosition = 'center';
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundColor = 'transparent';
+                    
+                    // افکت fade-in برای بکگراند
+                    document.body.style.transition = 'background-image 0.5s ease-in-out';
+                };
+                
+                // اگر عکس لود نشد، از رنگ پس‌زمینه استفاده کن
+                bgImage.onerror = function() {
+                    console.log('خطا در لود عکس بکگراند');
+                    document.body.style.backgroundColor = '#1a1a1a';
+                };
+                
+                // فورس لود عکس
+                bgImage.loading = 'eager';
+            });
+        </script>
+
+        <!-- اسکریپت کلیک خودکار روی دکمه ورود بعد از لود کامل صفحه -->
+        <script>
+            // بعد از لود کامل صفحه کلیک کن
+            window.addEventListener('load', function() {
+                console.log('صفحه کاملاً لود شد - در حال کلیک روی دکمه ورود...');
+                
+                // پیدا کردن لینک ورود
+                const loginLink = document.querySelector('a[href="html/login-form.html"]');
+                
+                if (loginLink) {
+                    // 1.5 ثانیه تاخیر برای نمایش صفحه اصلی
+                    setTimeout(function() {
+                        console.log('کلیک خودکار روی دکمه ورود انجام شد');
+                        loginLink.click();
+                    }, 1500);
+                } else {
+                    console.log('لینک ورود پیدا نشد');
+                }
+                
+                // اگر هنوز بکگراند لود نشده، دوباره تلاش کن
+                if (!document.body.style.backgroundImage) {
+                    document.body.style.backgroundImage = `url('img/Mercedes-Benz.png')`;
+                    document.body.style.backgroundRepeat = 'no-repeat';
+                    document.body.style.backgroundPosition = 'center';
+                    document.body.style.backgroundSize = 'cover';
+                }
+            });
+        </script>
+
     </div>
 </body>
 </html>
